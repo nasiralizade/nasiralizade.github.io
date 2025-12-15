@@ -1,1 +1,185 @@
-Hello there
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Nasir Alizade — Master Thesis Portfolio</title>
+    <meta name="description" content="MSc Computer Science (KTH), Data Science track — master thesis applicant. Projects, skills, and contact."/>
+    <meta property="og:title" content="Nasir Alizade — Portfolio"/>
+    <meta property="og:description" content="Master thesis portfolio: projects, skills, and contact."/>
+    <meta property="og:type" content="website"/>
+
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<header class="container">
+    <nav class="nav">
+        <a class="brand" href="#top">Nasir Alizade</a>
+        <div class="links">
+            <a href="#projects">Projects</a>
+            <a href="#thesis">Thesis</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="top" class="hero">
+        <div class="hero-left">
+            <div class="hero-title">
+                <img class="avatar" src="assets/profile.jpeg" alt="Nasir Alizade profile picture"/>
+                <div>
+                    <h1>Nasir Alizade</h1>
+                    <p class="subtitle">MSc Computer Science (KTH) · Data Science track (CSDA) · Stockholm, Sweden</p>
+                </div>
+            </div>
+
+            <p class="headline">
+                Seeking <strong>Master Thesis</strong> — Available <strong>Jan–Jun 2026</strong><br/>
+                Open to Computer Science topics (Data Science / AI / Systems) with hands-on development and evaluation
+            </p>
+
+            <p class="muted">CV and transcript available on request.</p>
+
+            <div class="cta">
+                <a class="button" href="https://github.com/nasiralizade" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="button" href="https://www.linkedin.com/in/nasir-alizade-26121a170/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="button primary" href="mailto:nasir.alizade1@gmail.com">Email</a>
+            </div>
+        </div>
+
+        <div class="card info">
+            <h2>Quick summary</h2>
+            <ul>
+                <li>MSc Computer Science at KTH (TCSCM), Track: Data Science (CSDA)</li>
+                <li>Hands-on: implementation, experiments, analysis, and clear documentation</li>
+                <li>Interested in both applied industry projects and research-oriented work</li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+<main class="container">
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>ESC-50 Audio Classification — CNN + GPT-2 Hybrid</h3>
+                <p class="muted">PyTorch · log-mel · SpecAugment · Mixup · OneCycleLR</p>
+                <ul>
+                    <li>End-to-end audio pipeline with 2-channel log-mel inputs.</li>
+                    <li>Progressive unfreezing + differential learning rates.</li>
+                    <li>Evaluation: confusion matrix and per-class analysis.</li>
+                </ul>
+                <div class="cardlinks">
+                    <a href="https://github.com/nasiralizade/Speech-project" target="_blank" rel="noreferrer">Repo</a>
+                    <a href="assets/reports/DT2119_Project.pdf" target="_blank" rel="noreferrer">Read report (PDF)</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Diffusion Models — Schedulers + ODE/SDE Sampling</h3>
+                <p class="muted">DDPM/CSM losses · Euler–Maruyama · Midpoint · ODE sampling</p>
+                <ul>
+                    <li>Compared scheduler choices and sampling step counts.</li>
+                    <li>Studied quality vs speed trade-offs and stability.</li>
+                    <li>Ablations on key parameters (e.g., sig_scale).</li>
+                </ul>
+                <div class="cardlinks">
+                    <a href="mailto:nasir.alizade1@gmail.com?subject=Request%20for%20Diffusion%20Models%20project%20details">Details available on request</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Hierarchical Control for FPS NPCs — LLM Intent Selection over RL Sub-Policies</h3>
+                <p class="muted">Unity · ML-Agents (PPO) · RL sub-policies · Local LLM · HTTP planner · Telemetry</p>
+                <ul>
+                    <li>Built a hierarchical controller where an LLM selects high-level intent (“navigate” vs “combat”) while RL runs low-latency control.</li>
+                    <li>Trained specialized navigation and combat policies in Unity ML-Agents (PPO) with reward shaping.</li>
+                    <li>Implemented switching smoothing (dwell-time/cooldown) and telemetry logging for offline evaluation.</li>
+                </ul>
+                <div class="cardlinks">
+                    <a href="assets/reports/First_Draft_DS2.pdf" target="_blank" rel="noreferrer">Read report (PDF)</a>
+                    <a href="mailto:nasir.alizade1@gmail.com?subject=Request%20for%20code%20access%20(FPS%20Hierarchical%20Agent)">Code available on request</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="thesis" class="section">
+        <h2>Thesis Interests</h2>
+        <div class="two-col">
+            <div class="card">
+                <h3>What I’m looking for</h3>
+                <ul>
+                    <li>Interested in master thesis opportunities in Computer Science or closely related fields</li>
+                    <li>Strong preference for hands-on work: coding, analysis, testing, and documentation</li>
+                    <li>Open to both research-oriented and applied/industry-focused projects</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Topics</h3>
+                <div class="tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Artificial Intelligence</span>
+                    <span class="tag">Data Science</span>
+                    <span class="tag">Speech & Speaker Recognition</span>
+                    <span class="tag">Generative Models</span>
+                    <span class="tag">Reinforcement Learning</span>
+                    <span class="tag">Algorithms & Data Structures</span>
+                    <span class="tag">Computer Security</span>
+                    <span class="tag">Internet Protocols</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="two-col">
+            <div class="card">
+                <h3>Core</h3>
+                <ul>
+                    <li><strong>Languages:</strong> Python, C++, Java, PHP, HTML/CSS</li>
+                    <li><strong>ML/DL:</strong> PyTorch, training loops, regularization, hyperparameter search</li>
+                    <li><strong>Tools:</strong> Git, Linux, Jupyter, Docker</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Coursework (selected)</h3>
+                <ul>
+                    <li>DD2430 (Project Course in Data Science)</li>
+                    <li>DD2424 (Deep Learning)</li>
+                    <li>DT2119 (Speech & Speaker Recognition)</li>
+                    <li>DD2421 (Machine Learning)</li>
+                    <li>DD2601 (Deep Generative Models)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>
+                📍 Stockholm, Sweden<br/>
+                📩 <a href="mailto:nasir.alizade1@gmail.com">nasir.alizade1@gmail.com</a><br/>
+                GitHub: <a href="https://github.com/nasiralizade" target="_blank" rel="noreferrer">@nasiralizade</a><br/>
+                LinkedIn: <a href="https://www.linkedin.com/in/nasir-alizade-26121a170/" target="_blank" rel="noreferrer">Nasir Alizade</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="muted">© <span id="year"></span> Nasir Alizade · Built with GitHub Pages</p>
+    </footer>
+</main>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
