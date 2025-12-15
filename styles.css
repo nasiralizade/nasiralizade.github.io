@@ -1,4 +1,5 @@
 :root{
+
     --bg:#0b0d12;
     --card:#121622;
     --text:#e8edf5;
@@ -9,16 +10,35 @@
     --max: 1040px;
 }
 
+html[data-theme="light"]{
+    --bg:#f7f8fb;
+    --card:#ffffff;
+    --text:#0f172a;
+    --muted:#475569;
+    --border: rgba(15, 23, 42, .10);
+    --shadow: 0 10px 30px rgba(2, 6, 23, .10);
+}
+
+html[data-theme="light"] .button{
+    background: rgba(15, 23, 42, .04);
+}
+
+html[data-theme="light"] .tag{
+    background: rgba(15, 23, 42, .04);
+}
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
     font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    background: radial-gradient(1200px 800px at 10% 0%, rgba(91,140,255,.18), transparent 60%),
-    radial-gradient(900px 700px at 90% 20%, rgba(159,91,255,.16), transparent 55%),
-    var(--bg);
+    background:
+            radial-gradient(1200px 800px at 10% 0%, rgba(91,140,255,.18), transparent 60%),
+            radial-gradient(900px 700px at 90% 20%, rgba(159,91,255,.16), transparent 55%),
+            var(--bg);
     color:var(--text);
     line-height:1.6;
 }
+
 
 .container{max-width:var(--max); margin:0 auto; padding:24px}
 .section{padding:18px 0 8px}
@@ -67,12 +87,16 @@ a:hover{opacity:.9; text-decoration: underline}
 }
 
 .card{
-    background: rgba(18,22,34,.88);
+    display: flex;
+    flex-direction: column;
+
+    background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding:16px;
+    padding: 16px;
     box-shadow: var(--shadow);
 }
+
 .card.info ul{margin:10px 0 0; padding-left:18px}
 
 .grid{
@@ -141,3 +165,17 @@ a:hover{opacity:.9; text-decoration: underline}
     object-fit:cover;
     border:1px solid rgba(255,255,255,.12);
 }
+.theme-toggle{
+    border:1px solid var(--border);
+    background: rgba(255,255,255,.03);
+    color: var(--text);
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.theme-toggle:hover{ opacity: .95; }
